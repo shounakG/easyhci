@@ -1,0 +1,25 @@
+done with object tracking surf vb.net
+crude operations with surf vb.net
+implemented windows APIs in c#
+camshift code vc++
+done with object tracking camshift vc++
+done with vector calculation camshift vc++
+done with single vector operations crude camshift vc++
+gate exams
+shopsoft
+gand lagli
+tried to run opensurf, dint work vc++
+object loss camshift vc++
+created dlls of apis c#
+testing of all apis vc++
+multiple gestures detection vc++
+determined multiple vector to gesture mapping
+determined the operations and gestures mapping
+operations with multiple gestures vc++
+object save to file for re detection camshift vc++
+detection of object from file surf vb.net
+determined object re detection criteria
+implemented object re detection vb.net
+created surf dll vb.net
+eliminated surf problems of null reference exception
+integrated surf in camshift. need to do breakpoint on object re-detection

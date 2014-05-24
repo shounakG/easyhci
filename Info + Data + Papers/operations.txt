@@ -1,0 +1,20 @@
+shutdown
+abortshutdown
+hibernate
+sleep
+restart
+notepad
+calc
+internt
+cmd
+paint
+switch tabs
+close all explorer windows
+min all explorer windows
+max all explorer windows
+close current
+volume increase
+vol down
+vol mute/unmute
+start taskmgr
+start MyComputer

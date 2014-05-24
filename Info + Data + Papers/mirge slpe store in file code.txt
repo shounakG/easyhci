@@ -1,0 +1,29 @@
+If File.Exists(path) = False Then
+                    ' Create a file to write to.
+                    sw = File.CreateText(path)
+                    sw.WriteLine("p1 = " + P1.X.ToString + " " + P1.Y.ToString + " p2 = " + P2.X.ToString + " " + P2.Y.ToString + " p3 = " + P3.X.ToString + " " + P3.Y.ToString + " p4 = " + P4.X.ToString + " " + P4.Y.ToString)
+                    ' sw.WriteLine("sdfsdf")
+                    sw.Flush()
+                    sw.Close()
+                Else
+                    sw = File.AppendText(path)
+                    sw.WriteLine("p1 = " + P1.X.ToString + " " + P1.Y.ToString + " p2 = " + P2.X.ToString + " " + P2.Y.ToString + " p3 = " + P3.X.ToString + " " + P3.Y.ToString + " p4 = " + P4.X.ToString + " " + P4.Y.ToString)
+                    'sw.WriteLine("dsfsfd")
+                    sw.Flush()
+                    sw.Close()
+                End If
+
+                If File.Exists(path2) = False Then
+                    ' Create a file to write to.
+                    sw2 = File.CreateText(path2)
+                    sw2.WriteLine("a = " + angle1.ToString + " b = " + angle2.ToString + " c = " + angle3.ToString + " d = " + angle4.ToString)
+                    ' sw.WriteLine("sdfsdf")
+                    sw2.Flush()
+                    sw2.Close()
+                Else
+                    sw2 = File.AppendText(path2)
+                    sw2.WriteLine("a = " + angle1.ToString + " b = " + angle2.ToString + " c = " + angle3.ToString + " d = " + angle4.ToString)
+                    'sw.WriteLine("dsfsfd")
+                    sw2.Flush()
+                    sw2.Close()
+                End If
