@@ -98,6 +98,15 @@
   <ItemGroup>
     <ResourceCompile Include="CamShiftDemo.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SurfDLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\SurfDLL\SurfDLL\bin\Debug\SurfDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

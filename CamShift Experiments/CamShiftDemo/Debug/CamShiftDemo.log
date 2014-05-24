@@ -1,22 +1,45 @@
-﻿Build started 27-04-2014 21:07:01.
-     1>Project "G:\CamShift Experiments\CamShiftDemo\CamShiftDemo.vcxproj" on node 2 (build target(s)).
+﻿Build started 24-05-2014 16:09:06.
+     1>Project "G:\EasyHCI\CamShift Experiments\CamShiftDemo\CamShiftDemo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\CamShiftDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"G:\EasyHCI\CamShift Experiments\Debug\SurfDLL.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /analyze- /errorReport:prompt "try (2).cpp" /clr:nostdlib 
+         try (2).cpp
+     1>g:\easyhci\surfdll\surfdll\bin\debug\surfdll.dll : warning C4945: 'frmSURF' : cannot import symbol from 'g:\easyhci\surfdll\surfdll\bin\debug\surfdll.dll': as 'SurfDLL::frmSURF' has already been imported from another assembly 'SurfDLL'
+                 g:\easyhci\camshift experiments\debug\surfdll.dll : see declaration of 'SurfDLL::frmSURF'
+                 first seen type is used; re-order imported assemblies to use the current type
+                 This diagnostic occurred while importing type 'SurfDLL.frmSURF' from assembly 'SurfDLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+     1>try (2).cpp(199): warning C4129: 'c' : unrecognized character escape sequence
+     1>try (2).cpp(208): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>try (2).cpp(209): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>try (2).cpp(376): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>try (2).cpp(376): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>try (2).cpp(376): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>try (2).cpp(376): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>try (2).cpp(418): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>try (2).cpp(420): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>try (2).cpp(466): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fcloseall. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(720) : see declaration of 'fcloseall'
+     1>try (2).cpp(283): warning C4101: 'hsv2' : unreferenced local variable
+     1>g:\easyhci\camshift experiments\camshiftdemo\try (2).cpp(187): warning C4715: 'getvector' : not all control paths return a value
          All outputs are up-to-date.
        ResourceCompile:
          All outputs are up-to-date.
        Link:
-         All outputs are up-to-date.
-         CamShiftDemo.vcxproj -> G:\CamShift Experiments\Debug\CamShiftDemo.exe
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\EasyHCI\CamShift Experiments\Debug\CamShiftDemo.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d247.lib opencv_calib3d247d.lib opencv_contrib247.lib opencv_contrib247d.lib opencv_core247.lib opencv_core247d.lib opencv_features2d247.lib opencv_features2d247d.lib opencv_flann247.lib opencv_flann247d.lib opencv_gpu247.lib opencv_gpu247d.lib opencv_highgui247.lib opencv_highgui247d.lib opencv_imgproc247.lib opencv_imgproc247d.lib opencv_legacy247.lib opencv_legacy247d.lib opencv_ml247.lib opencv_ml247d.lib opencv_nonfree247.lib opencv_nonfree247d.lib opencv_objdetect247.lib opencv_objdetect247d.lib opencv_ocl247.lib opencv_ocl247d.lib opencv_photo247.lib opencv_photo247d.lib opencv_stitching247.lib opencv_stitching247d.lib opencv_superres247.lib opencv_superres247d.lib opencv_ts247.lib opencv_ts247d.lib opencv_video247.lib opencv_video247d.lib opencv_videostab247.lib opencv_videostab247d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CamShiftDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\EasyHCI\CamShift Experiments\Debug\CamShiftDemo.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\CamShiftDemo.res
+         "Debug\try (2).obj"
+         Debug\try.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         CamShiftDemo.vcxproj -> G:\EasyHCI\CamShift Experiments\Debug\CamShiftDemo.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\EasyHCI\CamShift Experiments\Debug\CamShiftDemo.exe;#1" /manifest Debug\CamShiftDemo.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\CamShiftDemo.unsuccessfulbuild".
          Touching "Debug\CamShiftDemo.lastbuildstate".
-     1>Done Building Project "G:\CamShift Experiments\CamShiftDemo\CamShiftDemo.vcxproj" (build target(s)).
+     1>Done Building Project "G:\EasyHCI\CamShift Experiments\CamShiftDemo\CamShiftDemo.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.10
+Time Elapsed 00:00:02.97

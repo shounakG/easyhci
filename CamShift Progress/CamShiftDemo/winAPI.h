@@ -2,6 +2,7 @@
 
 namespace winAPI
 {
+#pragma managed
 	using namespace System;
 	using namespace System::Diagnostics;
 	using namespace System::ComponentModel;

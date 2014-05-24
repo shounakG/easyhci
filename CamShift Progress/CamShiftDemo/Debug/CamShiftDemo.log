@@ -1,5 +1,5 @@
-﻿Build started 06-04-2014 23:24:08.
-     1>Project "G:\CamShift Progress\CamShiftDemo\CamShiftDemo\CamShiftDemo.vcxproj" on node 2 (build target(s)).
+﻿Build started 24-05-2014 16:07:38.
+     1>Project "G:\EasyHCI\CamShift Progress\CamShiftDemo\CamShiftDemo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\CamShiftDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
@@ -11,12 +11,12 @@
          All outputs are up-to-date.
        Link:
          All outputs are up-to-date.
-         CamShiftDemo.vcxproj -> G:\CamShift Progress\CamShiftDemo\Debug\CamShiftDemo.exe
+         CamShiftDemo.vcxproj -> G:\EasyHCI\CamShift Progress\Debug\CamShiftDemo.exe
        FinalizeBuildStatus:
          Deleting file "Debug\CamShiftDemo.unsuccessfulbuild".
          Touching "Debug\CamShiftDemo.lastbuildstate".
-     1>Done Building Project "G:\CamShift Progress\CamShiftDemo\CamShiftDemo\CamShiftDemo.vcxproj" (build target(s)).
+     1>Done Building Project "G:\EasyHCI\CamShift Progress\CamShiftDemo\CamShiftDemo.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.09
+Time Elapsed 00:00:00.12

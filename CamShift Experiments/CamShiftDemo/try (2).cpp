@@ -1,3 +1,5 @@
+//INTEGRATED WITH SURF ALGORITHM
+
 #ifdef _CH_
 #pragma package <opencv>
 #endif
@@ -12,7 +14,7 @@
 #endif
 
 #pragma managed
-#using "G:\SURF\SurfDLL\SurfDLL\bin\Debug\SurfDLL.dll"
+#using "G:\EasyHCI\SurfDLL\SurfDLL\bin\Debug\SurfDLL.dll"
 
 #define PI 3.1416
 
@@ -432,7 +434,7 @@ int main( int argc, char** argv )
 
 			//show the image (camera capture) and the histogram
 			cvShowImage( "CamShiftDemo", image );
-			cvShowImage( "Histogram", histimg );
+			//cvShowImage( "Histogram", histimg );
 
 			//wait for input.
 			c = cvWaitKey(10);
