@@ -1,0 +1,4 @@
+H:\APIs\SwitchWindows\SwitchWindows\bin\Debug\SwitchWindows.dll
+H:\APIs\SwitchWindows\SwitchWindows\bin\Debug\SwitchWindows.pdb
+H:\APIs\SwitchWindows\SwitchWindows\obj\Debug\SwitchWindows.dll
+H:\APIs\SwitchWindows\SwitchWindows\obj\Debug\SwitchWindows.pdb

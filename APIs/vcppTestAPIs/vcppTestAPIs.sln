@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vcppTestAPIs", "vcppTestAPIs\vcppTestAPIs.vcxproj", "{199EDEA3-1D1C-4869-9739-11FC3FA13982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{199EDEA3-1D1C-4869-9739-11FC3FA13982}.Debug|Win32.ActiveCfg = Debug|Win32
+		{199EDEA3-1D1C-4869-9739-11FC3FA13982}.Debug|Win32.Build.0 = Debug|Win32
+		{199EDEA3-1D1C-4869-9739-11FC3FA13982}.Release|Win32.ActiveCfg = Release|Win32
+		{199EDEA3-1D1C-4869-9739-11FC3FA13982}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.exe
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.pdb
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.xml
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmWelcome.resources
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmMain.resources
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.Resources.resources
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbproj.GenerateResource.Cache
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.exe
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.xml
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.pdb
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\Interop.AXVLC.dll
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\AxInterop.AXVLC.dll
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbproj.ResolveComReference.cache
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmObject.resources
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\Interop.AXVLC.dll
+c:\users\shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\AxInterop.AXVLC.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\Interop.WMPLib.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmGesture.resources
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmRegisterGestures.resources
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmRG.resources
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsOperations.dll
+C:\Users\Shounak\documents\visual studio 2010\Projects\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbprojResolveAssemblyReference.cache
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\Interop.AXVLC.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\Interop.WMPLib.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\AxInterop.AXVLC.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\AxInterop.WMPLib.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbproj.ResolveComReference.cache
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.exe
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.xml
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.pdb
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.exe
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.pdb
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\WindowsApplication11.xml
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\Interop.AXVLC.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\Interop.WMPLib.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\AxInterop.AXVLC.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\bin\Debug\AxInterop.WMPLib.dll
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbprojResolveAssemblyReference.cache
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmWelcome.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmMain.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmRegisterGestures.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmRG.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmGesture.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.Resources.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.frmObject.resources
+G:\TrainingPhase\WindowsApplication11\WindowsApplication11\obj\x86\Debug\WindowsApplication11.vbproj.GenerateResource.Cache

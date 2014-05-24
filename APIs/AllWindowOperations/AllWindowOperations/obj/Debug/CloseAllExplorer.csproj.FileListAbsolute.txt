@@ -1,0 +1,4 @@
+H:\APIs\CloseAllExplorer\CloseAllExplorer\bin\Debug\AllWindowOperations.dll
+H:\APIs\CloseAllExplorer\CloseAllExplorer\bin\Debug\AllWindowOperations.pdb
+H:\APIs\CloseAllExplorer\CloseAllExplorer\obj\Debug\AllWindowOperations.dll
+H:\APIs\CloseAllExplorer\CloseAllExplorer\obj\Debug\AllWindowOperations.pdb

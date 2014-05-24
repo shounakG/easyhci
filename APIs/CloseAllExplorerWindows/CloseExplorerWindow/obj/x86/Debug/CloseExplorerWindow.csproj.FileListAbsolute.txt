@@ -1,0 +1,24 @@
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\Interop.SHDocVw.dll
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csproj.ResolveComReference.cache
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\bin\Debug\CloseExplorerWindow.exe
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\bin\Debug\CloseExplorerWindow.pdb
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\WindowsFormsApplication1.frmMain.resources
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csproj.GenerateResource.Cache
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.exe
+C:\Users\saket\documents\visual studio 2010\Projects\CloseExplorerWindow\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.pdb
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\Interop.SHDocVw.dll
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csproj.ResolveComReference.cache
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.exe
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.pdb
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\bin\Debug\CloseExplorerWindow.exe
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\bin\Debug\CloseExplorerWindow.pdb
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\WindowsFormsApplication1.frmMain.resources
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csproj.GenerateResource.Cache
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csprojResolveAssemblyReference.cache
+H:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\bin\Debug\AllWindowOperations.pdb
+G:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\Interop.SHDocVw.dll
+G:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.csproj.ResolveComReference.cache
+G:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.exe
+G:\APIs\CloseAllExplorerWindows\CloseExplorerWindow\obj\x86\Debug\CloseExplorerWindow.pdb

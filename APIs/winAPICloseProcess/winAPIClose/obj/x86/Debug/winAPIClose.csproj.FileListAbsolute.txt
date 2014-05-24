@@ -1,0 +1,35 @@
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\bin\Debug\winAPIClose.exe
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\bin\Debug\winAPIClose.pdb
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\obj\x86\Debug\winAPIClose.frmMain.resources
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\obj\x86\Debug\winAPIClose.Properties.Resources.resources
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\obj\x86\Debug\winAPIClose.csproj.GenerateResource.Cache
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\obj\x86\Debug\winAPIClose.exe
+C:\Users\saket\AppData\Local\Temporary Projects\winAPIClose\obj\x86\Debug\winAPIClose.pdb
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.exe
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.pdb
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\bin\Debug\winAPIClose.exe
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\bin\Debug\winAPIClose.pdb
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.frmMain.resources
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.Properties.Resources.resources
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.csproj.GenerateResource.Cache
+C:\Users\saket\documents\visual studio 2010\Projects\winAPIClose\winAPIClose\obj\x86\Debug\winAPIClose.csprojResolveAssemblyReference.cache
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.exe
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.pdb
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\bin\Debug\winAPIClose.exe
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\bin\Debug\winAPIClose.pdb
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.csprojResolveAssemblyReference.cache
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.frmMain.resources
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.Properties.Resources.resources
+C:\Users\saket\Documents\Visual Studio 2010\Projects\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.csproj.GenerateResource.Cache
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.exe
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.pdb
+H:\APIs\winAPICloseProcess\winAPIClose\bin\Debug\winAPIClose.exe
+H:\APIs\winAPICloseProcess\winAPIClose\bin\Debug\winAPIClose.pdb
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.csprojResolveAssemblyReference.cache
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.frmMain.resources
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.Properties.Resources.resources
+H:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.csproj.GenerateResource.Cache
+H:\APIs\winAPICloseProcess\winAPIClose\bin\Debug\SwitchWindows.dll
+H:\APIs\winAPICloseProcess\winAPIClose\bin\Debug\SwitchWindows.pdb
+G:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.exe
+G:\APIs\winAPICloseProcess\winAPIClose\obj\x86\Debug\winAPIClose.pdb

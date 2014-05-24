@@ -1,0 +1,4 @@
+H:\APIs\MiscellaniousAPI\MiscellaniousAPI\bin\Debug\MiscellaniousAPI.dll
+H:\APIs\MiscellaniousAPI\MiscellaniousAPI\bin\Debug\MiscellaniousAPI.pdb
+H:\APIs\MiscellaniousAPI\MiscellaniousAPI\obj\Debug\MiscellaniousAPI.dll
+H:\APIs\MiscellaniousAPI\MiscellaniousAPI\obj\Debug\MiscellaniousAPI.pdb
