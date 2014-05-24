@@ -1,1 +1,0 @@
-We can use this image keypoints to recognize objects. The simplest method is a bruteforce matching between the descriptors of the object and those of the scene, but it may not be that efficient. The best method is to train a model using machine learning techniques (like SVM) with the extracted keypoints.
