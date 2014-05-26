@@ -49,6 +49,8 @@ int show_hist = 0;
 int saved=0;
 int sample_points=0;
 
+const char* WINDOW_NAME = "Tracking...";
+
 //PARAMETERS FOR SEARCH WINDOW
 CvPoint origin;
 CvRect selection;
@@ -286,9 +288,6 @@ int visibility(IplImage*src,CvRect roi)
 		return -1;
 	}
 	
-	//cvNamedWindow("Object Visibility",1);
-	//cvCreateTrackbar("Visibility","Object Visibility",&visibility_index,10,0);
-
 	return 1;
 }
 
@@ -296,17 +295,31 @@ int main( int argc, char** argv )
 {
 	try
 	{
-		CvCapture* capture = 0;//CvCapture is the standard structure used as a parameter for all video operations
-    
+		selection.x=138;
+		selection.y=13;
+		selection.width=31;
+		selection.height=83;
+		track_object=-1;
+		saved=1;
+
+		showSURF();
+		
+		selection.x = retArray[0];
+		selection.y = retArray[1];
+		selection.width = abs(retArray[2] - retArray[0]);
+		selection.height = abs(retArray[1] - retArray[3]);
+
+		CvCapture* capture = 0;			//CvCapture is the standard structure used as a parameter for all video operations
+
 		if( argc == 1 || (argc == 2 && strlen(argv[1]) == 1 && isdigit(argv[1][0])))
 		{
-			capture = cvCaptureFromCAM(argc == 2 ? argv[1][0] - '0' : 0);//If source specified, use it. Else use default(0)
+			capture = cvCaptureFromCAM(argc == 2 ? argv[1][0] - '0' : 0);	//If source specified, use it. Else use default(0)
 			IplImage* frame = cvQueryFrame(capture); //Create image frames from capture  
 		}
 		else if( argc == 2 )
 			capture = cvCaptureFromAVI( argv[1] ); //Capture from AVI (not a case)
 
-		if( !capture )//Capture from camera failed
+		if( !capture )								//Capture from camera failed
 		{
 			fprintf(stderr,"Could not initialize capturing due to Camera Failure...\n");
 			return -1;
@@ -318,19 +331,13 @@ int main( int argc, char** argv )
 			"\tb - switch to/from backprojection view\n"
 			"\th - show/hide object histogram\n"
 			"To initialize tracking, select the object with mouse\n" );
-
-		//cvNamedWindow( "Histogram", 1 );//Create a new window for showing histogram
 		
-		cvNamedWindow( "Tracking...", 0);//Main window
-		cvResizeWindow("Tracking...", 250, 250);
-		cvMoveWindow("Tracking...", 1600, 800);
+		//cvNamedWindow( WINDOW_NAME, 1);				//Main window
 
-		cvSetMouseCallback( "Tracking...", on_mouse, 0 );//Set mouse handler for main window
-		
-		/*cvCreateTrackbar( "Vmin", "CamShiftDemo", &vmin, 256, 0 );
-		cvCreateTrackbar( "Vmax", "CamShiftDemo", &vmax, 256, 0 );
-		cvCreateTrackbar( "Smin", "CamShiftDemo", &smin, 256, 0 );*/
+		cvResizeWindow(WINDOW_NAME, 250, 250);
 
+		//cvMoveWindow(WINDOW_NAME, 1600, 750);		//FOR RESULUTION 1920-1080
+		cvMoveWindow(WINDOW_NAME, 1046, 438);		//FOR RESOLUTION 1366*768
 
 		/* Begin the loop for real-time capture
 		   The loop executes until the ESC key is pressed, which indicates the termination of the program
@@ -340,31 +347,31 @@ int main( int argc, char** argv )
 			IplImage* frame = 0;
 			int i, bin_w, c;
 
-			frame = cvQueryFrame( capture );//cvQueryFrame captures the frame from the camera input
+			frame = cvQueryFrame( capture );	//cvQueryFrame captures the frame from the camera input
 			if( !frame )
 				break;
 
 			if( !image )
 			{
 				/* allocate all the buffers */
-				image = cvCreateImage( cvGetSize(frame), 8, 3 );//create the image from the current frame
+				image = cvCreateImage( cvGetSize(frame), 8, 3 );		//create the image from the current frame
 				image->origin = frame->origin;
-				hsv = cvCreateImage( cvGetSize(frame), 8, 3 );//create the hsv, hue, mask and backproject variable,
-															 //will be null now since the image is not selected
+				hsv = cvCreateImage( cvGetSize(frame), 8, 3 );		//create the hsv, hue, mask and backproject variable,
+																	//will be null now since the image is not selected
 				hue = cvCreateImage( cvGetSize(frame), 8, 1 );
 				mask = cvCreateImage( cvGetSize(frame), 8, 1 );
 				backproject = cvCreateImage( cvGetSize(frame), 8, 1 );
-				hist = cvCreateHist( 1, &hdims, CV_HIST_ARRAY, &hranges, 1 );//range 0-180
-				histimg = cvCreateImage( cvSize(320,200), 8, 3 );//create the histogram image, size(320*200)
+				hist = cvCreateHist( 1, &hdims, CV_HIST_ARRAY, &hranges, 1 );		//range 0-180
+				histimg = cvCreateImage( cvSize(320,200), 8, 3 );		//create the histogram image, size(320*200)
 				cvZero( histimg );
 			}
 
 			cvCopy( frame, image, 0 );
-			cvCvtColor( image, hsv, CV_BGR2HSV );//convert the image color space; here, convert form RGB to HSV
+			cvCvtColor( image, hsv, CV_BGR2HSV );		//convert the image color space; here, convert form RGB to HSV
 
 			/* This is set to 0 initially.
 			* Once the target is selected, it is reset to -1. 
-			* Unless the object is in the window, it remains 1 
+			* Unless the object is in the window, it remains 1
 			*/
 
 			if( track_object )
@@ -378,23 +385,23 @@ int main( int argc, char** argv )
 			
 				cvInRangeS( hsv, cvScalar(0,smin,MIN(_vmin,_vmax),0),
 							cvScalar(180,256,MAX(_vmin,_vmax),0), mask );
-				cvSplit( hsv, hue, 0, 0, 0 );//split the source array(hsv) into different arrays
+				cvSplit( hsv, hue, 0, 0, 0 );		//split the source array(hsv) into different arrays
 
 
 				/* track_object will be less than 0 only once,
-				* wheenver the object is selected using mouse drag
+				* whenever the object is selected using mouse drag
 				* after that, it is reset to 1
 				*/
 
 				if( track_object < 0 )
 				{				
 					float max_val = 0.f;
-					cvSetImageROI( hue, selection );//set the region of interest
+					cvSetImageROI( hue, selection );	//set the region of interest
 					cvSetImageROI( mask, selection );
-					cvCalcHist( &hue, hist, 0, mask );//calculate the image histogram. 
-													  //the range is 0-180 and the bin size = 16
+					cvCalcHist( &hue, hist, 0, mask );	//calculate the image histogram. 
+														//the range is 0-180 and the bin size = 16
 
-					cvGetMinMaxHistValue( hist, 0, &max_val, 0, 0 );//get the min and max histogram bins (here only max)
+					cvGetMinMaxHistValue( hist, 0, &max_val, 0, 0 );	//get the min and max histogram bins (here only max)
 					cvConvertScale( hist->bins, hist->bins, max_val ? 255. / max_val : 0., 0 );
 					cvResetImageROI( hue );
 					cvResetImageROI( mask );
@@ -402,7 +409,7 @@ int main( int argc, char** argv )
 					track_object = 1;
 
 					cvZero( histimg );
-					bin_w = histimg->width / hdims;// hdims=16, calculate the bin width
+					bin_w = histimg->width / hdims;		// hdims=16, calculate the bin width
 					for( i = 0; i < hdims; i++ )
 					{
 						int val = cvRound( cvGetReal1D(hist->bins,i)*histimg->height/255 );
@@ -413,8 +420,8 @@ int main( int argc, char** argv )
 					}
 				}
 
-				cvCalcBackProject( &hue, backproject, hist );//calculate backprojection, which means highlighting only the desired pixels.Rest all are blackened
-				cvAnd( backproject, mask, backproject, 0 );//ANDing of the two images, backproject and mask. stored in backproject
+				cvCalcBackProject( &hue, backproject, hist );	//calculate backprojection, which means highlighting only the desired pixels.Rest all are blackened
+				cvAnd( backproject, mask, backproject, 0 );	//ANDing of the two images, backproject and mask. stored in backproject
        
 				/*IMPLEMENTS THE CAMSHIFT ALGORITHM.
 				cvCamShift(probImage, window, criteria)
@@ -437,41 +444,43 @@ int main( int argc, char** argv )
 				cvEllipseBox( image, track_box, CV_RGB(255,0,0), 3, CV_AA, 0 );
 			
 				CvRect myRect=cvRect(abs((track_box.center.x-(track_box.size.width/2))),
-						(abs(track_box.center.y-(track_box.size.height/2))),abs(track_box.size.width),abs(track_box.size.height));
+						(abs(track_box.center.y-(track_box.size.height/2))),abs(track_box.size.width),
+						abs(track_box.size.height));
 
-					if(visibility(backproject,myRect) == -1)
+				
+				if(visibility(backproject,myRect) == -1)
+				{
+					printf("Object has been lost");
+					cvReleaseCapture(&capture);
+					
+					showSURF();
+					
+					if(retArray[0]==-1 && retArray[1]==-1)
 					{
-						printf("Object has been lost");
-						cvReleaseCapture(&capture);
-						showSURF();
-						if(retArray[0]==-1 && retArray[1]==-1)
-						{
-							cvDestroyAllWindows();
-							printf("\n\nObject has been lost completely");
-							getchar();
-							return -1;
-						}
-						else
-						{
-							capture = cvCaptureFromCAM(argc == 2 ? argv[1][0] - '0' : 0);
-							frame = cvQueryFrame(capture);
-							//getchar();
-							selection.x = retArray[0];
-							selection.y = retArray[1];
-							selection.width = abs(retArray[2] - retArray[0]);
-							selection.height = abs(retArray[1] - retArray[3]);
-							track_object = -1;
-
-							cvSetImageROI(hue,selection);
-							cvSetImageROI(mask,selection);
-							cvResetImageROI(hue);
-							cvResetImageROI(mask);
-
-							//cvShowImage("dsa",mask);
-						
-						}
+						cvDestroyAllWindows();
+						printf("\n\nObject has been lost completely");
+						getchar();
+						return -1;
 					}
-					saveImage(frame);
+					else
+					{
+
+						capture = cvCaptureFromCAM(argc == 2 ? argv[1][0] - '0' : 0);
+						frame = cvQueryFrame(capture);
+						selection.x = retArray[0];
+						selection.y = retArray[1];
+						selection.width = abs(retArray[2] - retArray[0]);
+						selection.height = abs(retArray[1] - retArray[3]);
+							
+						track_object = -1;
+						
+						cvSetImageROI(hue,selection);
+						cvSetImageROI(mask,selection);
+						cvResetImageROI(hue);
+						cvResetImageROI(mask);
+					}
+				}
+				saveImage(frame);
 
 				//crop(backproject,myRect);
 				cartx=track_box.center.x;
@@ -500,8 +509,7 @@ int main( int argc, char** argv )
 			}
 		
 			//show the image (camera capture) and the histogram
-			cvShowImage( "Tracking...", image );
-			//cvShowImage( "Histogram", histimg );
+			cvShowImage( WINDOW_NAME, image );
 		
 			//wait for input.
 			c = cvWaitKey(10);
@@ -529,7 +537,7 @@ int main( int argc, char** argv )
 		}
 
 		cvReleaseCapture( &capture );
-		cvDestroyWindow("Tracking...");
+		cvDestroyWindow(WINDOW_NAME);
 		fcloseall();
 
 		if(saved==1)
