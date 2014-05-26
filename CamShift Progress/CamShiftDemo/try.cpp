@@ -1,4 +1,5 @@
 //MULTIPLE GESTURES IMPLEMENTED
+//IMPLEMENTED SURF + MULTIPLE GESTURES
 
 #ifdef _CH_
 #pragma package <opencv>
@@ -22,7 +23,8 @@
 
 #define PI 3.1416
 
-//IplImage is a structure from Intel Image Processing Library which contains the image data like ROI, scale, height, width etc. 
+//IplImage is a structure from Intel Image 
+//Processing Library which contains the image data like ROI, scale, height, width etc. 
 
 #pragma unmanaged
 IplImage *image = 0, *hsv = 0, *hue = 0, *mask = 0, *backproject = 0, *histimg = 0;
@@ -284,8 +286,8 @@ int visibility(IplImage*src,CvRect roi)
 		return -1;
 	}
 	
-	cvNamedWindow("Object Visibility",1);
-	cvCreateTrackbar("Visibility","Object Visibility",&visibility_index,10,0);
+	//cvNamedWindow("Object Visibility",1);
+	//cvCreateTrackbar("Visibility","Object Visibility",&visibility_index,10,0);
 
 	return 1;
 }
@@ -318,11 +320,16 @@ int main( int argc, char** argv )
 			"To initialize tracking, select the object with mouse\n" );
 
 		//cvNamedWindow( "Histogram", 1 );//Create a new window for showing histogram
-		cvNamedWindow( "CamShiftDemo", 1 );//Main window
-		cvSetMouseCallback( "CamShiftDemo", on_mouse, 0 );//Set mouse handler for main window
-		cvCreateTrackbar( "Vmin", "CamShiftDemo", &vmin, 256, 0 );
+		
+		cvNamedWindow( "Tracking...", 0);//Main window
+		cvResizeWindow("Tracking...", 250, 250);
+		cvMoveWindow("Tracking...", 1600, 800);
+
+		cvSetMouseCallback( "Tracking...", on_mouse, 0 );//Set mouse handler for main window
+		
+		/*cvCreateTrackbar( "Vmin", "CamShiftDemo", &vmin, 256, 0 );
 		cvCreateTrackbar( "Vmax", "CamShiftDemo", &vmax, 256, 0 );
-		cvCreateTrackbar( "Smin", "CamShiftDemo", &smin, 256, 0 );
+		cvCreateTrackbar( "Smin", "CamShiftDemo", &smin, 256, 0 );*/
 
 
 		/* Begin the loop for real-time capture
@@ -493,7 +500,7 @@ int main( int argc, char** argv )
 			}
 		
 			//show the image (camera capture) and the histogram
-			cvShowImage( "CamShiftDemo", image );
+			cvShowImage( "Tracking...", image );
 			//cvShowImage( "Histogram", histimg );
 		
 			//wait for input.
@@ -522,41 +529,43 @@ int main( int argc, char** argv )
 		}
 
 		cvReleaseCapture( &capture );
-		cvDestroyWindow("CamShiftDemo");
+		cvDestroyWindow("Tracking...");
 		fcloseall();
 
-		int vectors = sample_points/20;
-		int stray_points = sample_points%20;
-
-		switch(calcVector(vectors,stray_points))
+		if(saved==1)
 		{
-		case 0:
-			printf("browser");
-			winAPI::browser();
-			break;
-		case 1:
-			winAPI::calc();
-			break;
-		case 2:
-			winAPI::browser();
-			break;
-		case 3:
-			winAPI::shutdown60();
-			break;
-		case 4:
-			winAPI::notepad();
-			break;
-		case 5:
-			winAPI::paint();
-			break;
-		case 6:
-			winAPI::browser();
-			break;
-		case 7:
-			winAPI::cmdshell();
-			break;
-		default:
-			fprintf(stdout,"Enter proper choice");
+			int vectors = sample_points/20;
+			int stray_points = sample_points%20;
+
+			switch(calcVector(vectors,stray_points))
+			{
+			case 0:
+				winAPI::browser();
+				break;
+			case 1:
+				winAPI::calc();
+				break;
+			case 2:
+				winAPI::browser();
+				break;
+			case 3:
+				winAPI::shutdown60();
+				break;
+			case 4:
+				winAPI::notepad();
+				break;
+			case 5:
+				winAPI::paint();
+				break;
+			case 6:
+				winAPI::browser();
+				break;
+			case 7:
+				winAPI::cmdshell();
+				break;
+			default:
+				fprintf(stdout,"Enter proper choice");
+			}
 		}
 	
 		clearvectorfile("e:/camshift/vector.txt");
@@ -574,4 +583,4 @@ int main( int argc, char** argv )
 
 #ifdef _EiC
 main(1,"main.cpp");
-#endif			
+#endif
