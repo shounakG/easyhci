@@ -1,37 +1,17 @@
-﻿Build started 27-05-2014 00:26:05.
+﻿Build started 27-05-2014 09:50:28.
      1>Project "G:\EasyHCI\CamShift Progress\CamShiftDemo\CamShiftDemo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\CamShiftDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FUG:\EasyHCI\SurfDLL\SurfDLL\bin\Debug\SurfDLL.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /analyze- /errorReport:prompt try.cpp /clr:nostdlib 
-         try.cpp
-     1>try.cpp(255): warning C4129: 'c' : unrecognized character escape sequence
-     1>try.cpp(264): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>try.cpp(265): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>try.cpp(448): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>try.cpp(448): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>try.cpp(448): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>try.cpp(448): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>try.cpp(492): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>try.cpp(494): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>try.cpp(497): warning C4129: 'c' : unrecognized character escape sequence
-     1>try.cpp(541): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fcloseall. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(720) : see declaration of 'fcloseall'
-     1>try.cpp(580): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fcloseall. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(720) : see declaration of 'fcloseall'
-     1>g:\easyhci\camshift progress\camshiftdemo\try.cpp(243): warning C4715: 'getvector' : not all control paths return a value
+         All outputs are up-to-date.
          All outputs are up-to-date.
        ResourceCompile:
          All outputs are up-to-date.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\EasyHCI\CamShift Progress\Debug\CamShiftDemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x86\vc10\lib opencv_core247d.lib opencv_imgproc247d.lib opencv_highgui247d.lib opencv_ml247d.lib opencv_video247d.lib opencv_features2d247d.lib opencv_calib3d247d.lib opencv_legacy247d.lib opencv_objdetect247d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CamShiftDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\EasyHCI\CamShift Progress\Debug\CamShiftDemo.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\CamShiftDemo.res
-         Debug\try.obj
-         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         All outputs are up-to-date.
          CamShiftDemo.vcxproj -> G:\EasyHCI\CamShift Progress\Debug\CamShiftDemo.exe
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\EasyHCI\CamShift Progress\Debug\CamShiftDemo.exe;#1" /manifest Debug\CamShiftDemo.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\CamShiftDemo.unsuccessfulbuild".
          Touching "Debug\CamShiftDemo.lastbuildstate".
@@ -39,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.86
+Time Elapsed 00:00:00.10

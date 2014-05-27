@@ -1,5 +1,6 @@
 //MULTIPLE GESTURES IMPLEMENTED
 //IMPLEMENTED SURF + MULTIPLE GESTURES
+//INITIATION DONE
 
 #ifdef _CH_
 #pragma package <opencv>
@@ -304,10 +305,13 @@ int main( int argc, char** argv )
 
 		showSURF();
 		
-		selection.x = retArray[0];
-		selection.y = retArray[1];
-		selection.width = abs(retArray[2] - retArray[0]);
-		selection.height = abs(retArray[1] - retArray[3]);
+		if(retArray[0]!=-1 && retArray[1]!=-1)
+		{
+			selection.x = retArray[0];
+			selection.y = retArray[1];
+			selection.width = abs(retArray[2] - retArray[0]);
+			selection.height = abs(retArray[1] - retArray[3]);
+		}
 
 		CvCapture* capture = 0;			//CvCapture is the standard structure used as a parameter for all video operations
 
@@ -464,7 +468,6 @@ int main( int argc, char** argv )
 					}
 					else
 					{
-
 						capture = cvCaptureFromCAM(argc == 2 ? argv[1][0] - '0' : 0);
 						frame = cvQueryFrame(capture);
 						selection.x = retArray[0];
@@ -480,7 +483,9 @@ int main( int argc, char** argv )
 						cvResetImageROI(mask);
 					}
 				}
-				saveImage(frame);
+				//saveImage(frame);
+
+				cv::rectangle(cv::Mat(image),cv::Point(selection.x,selection.y),cv::Point(retArray[2],retArray[3]),cv::Scalar(0,55,255),1,8,0);
 
 				//crop(backproject,myRect);
 				cartx=track_box.center.x;

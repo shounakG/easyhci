@@ -28,6 +28,7 @@ Imports System.Runtime.InteropServices
         actualImage = camCapture.RetrieveGrayFrame
         AddHandler Me.FormClosed, AddressOf getPoints
         tmSURF.Start()
+
     End Sub
 
     Private Sub tmSURF_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmSURF.Tick

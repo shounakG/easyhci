@@ -53,7 +53,6 @@ Partial Class frmSURF
         '
         'tmStop
         '
-        Me.tmStop.Enabled = True
         Me.tmStop.Interval = 3000
         '
         'frmSURF
