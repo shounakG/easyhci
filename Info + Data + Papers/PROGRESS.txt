@@ -7,7 +7,7 @@ done with vector calculation camshift vc++
 done with single vector operations crude camshift vc++
 gate exams
 shopsoft
-gand lagli
+lag gayi
 tried to run opensurf, dint work vc++
 object loss camshift vc++
 created dlls of apis c#
