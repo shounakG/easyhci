@@ -10,6 +10,7 @@ Technologies used: C#.NET, VB.NET, OpenCV
 
 
 Lead developers: Shounak Gujarathi, Saket Joshi
+
 Resource management: Abhishek Mirge
 
 
