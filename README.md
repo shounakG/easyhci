@@ -9,10 +9,9 @@ The project sees the implementation of SURF algorithm and CAMshift algorithm for
 Technologies used: C#.NET, VB.NET, OpenCV
 
 
-Lead developers: Shounak Gujarathi, Saket Joshi
-
-Resource management: Abhishek Mirge
-
+Lead developers: Abhishek Mirge
+OpenCV: Saket Joshi
+VB module: Shounak Gujarathi
 
 
 Related Paper Publications:
